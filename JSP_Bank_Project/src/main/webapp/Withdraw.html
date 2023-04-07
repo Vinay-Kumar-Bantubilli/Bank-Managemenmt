@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #head{
+            position: absolute;
+            top: 30vh;
+            color: white;
+        }
+        body{
+            background-color: rgb(50, 50, 77);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #ip{
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }
+        #submit{
+            background-color: white;
+            cursor: pointer;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }
+        #submit:hover{
+            background-color: gray;
+        }
+       </style>
+</head>
+<body>
+	<h1 id="head">Withdraw</h1>
+    <form id="cont" action="Withdraw" method="get">
+        <input id="ip" type="text" name="withdraw" placeholder="Withdraw Amount"><br><br>
+        <input id="submit" type="submit" value="withdraw">
+    </form>
+</body>
+</html>

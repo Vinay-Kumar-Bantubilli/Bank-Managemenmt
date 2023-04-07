@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+	<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(50, 50, 77);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #head{
+        	position:absolute;
+            margin-top: 100px;
+            color: whitesmoke;
+        }
+        #cont{
+            position: absolute;
+            top: 20vh;
+            display: flex;
+            list-style: none;
+        }
+        .options{
+            width: 200px;
+            height: 30px;
+            margin: 12px;
+            background-color: rgb(179, 179, 179);
+            display: inline;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration:none;
+        }
+        .options:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+	<center id="head"><h1>Welcome to JSP Bank</h1></center>
+    <ul id="cont">
+        <a href="CheckBalance" method="get"><li class="options">Check Balance</li></a>
+        <a href="Withdraw.html"><li class="options">Withdraw</li></a>
+       <a href="Deposit.html"> <li class="options">Deposit</li></a>
+        <a href="Mobile"><li class="options">Update Phone Number</li></a>
+        <a href="Details" method="get"><li class="options">Account Holder Details</li></a>
+        <a href="Login.html" method="get"><li class="options">Log Out</li></a>
+           
+    </ul>
+</body>
+</html>

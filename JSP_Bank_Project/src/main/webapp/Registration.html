@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+	 <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(50, 50, 77);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #head{
+            position: absolute;
+            top: 20px;
+            color: white;
+        }
+        #container{
+            border: 2px solid black;
+            width: 25vw;
+            height: 65vh;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            background-color:  rgb(95, 95, 95);
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            background-color: rgb(0, 0, 0,);
+        }
+        .a{
+            width: 200px;
+            height: 25px;
+        }
+        #submit{
+            width: 60px;
+        }
+        #submit:hover{
+            background-color:black;
+            color:gold;
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+	<center id="head"><h1>Welcome to the JSP bank registration page</h1></center>
+    <form id="container" action="Rigistration" method="post">
+        <center>
+            <input class="a" type="text" placeholder="Enter Full Name" name="name"><br><br>
+            <input  class="a" type="text" placeholder="Aadhar Number" name="aadhar"><br><br>
+            <input  class="a" type="int" placeholder="Enter Mobile number" name="mobile"><br><br>
+            <input  class="a" type="text" placeholder="Enter Email-Id" name="email"><br><br>
+            <input  class="a" type="text" placeholder="Enter Pan Number" name="pan"><br><br>
+            <label for="">Gender</label><br>
+            <input type="radio" name="g" value="male">male
+            <input type="radio" name="g" value="female">female
+            <input type="radio" name="g" value="other">other<br><br>
+            <input class="a" type="text" placeholder="Create Password" name="password"><br><br>
+            <input class="a" type="text" placeholder="Confirm Password" name="cpassword"><br><br>
+            <input id="submit" class="a" type="submit" value="Register">
+            <a href="Login.html"><input id="submit" type="button" value="Login"></a>
+        </center>
+    </form>
+</body>
+</html>

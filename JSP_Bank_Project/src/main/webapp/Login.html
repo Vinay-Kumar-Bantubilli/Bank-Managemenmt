@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+
+	<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(50, 50, 77);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #head{
+            position: absolute;
+            top: 15vh;
+            color: white;
+        }
+        #container{
+            border: 2px solid black;
+            width: 25vw;
+            height: 30vh;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            background-color: rgb(95, 95, 95);
+            position:absolute;
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            background-color: rgb(0, 0, 0,);  
+        }
+        .a{
+            width: 200px;
+            height: 25px;
+        }
+        #submit{
+            width: 60px;
+        }
+        #submit:hover{
+           
+            border: 2px solid green;
+        }
+		#reg{
+			width:70px;
+		}
+		
+    </style>
+</head>
+<body>
+	 <center id="head"><h1>Login :)</h1></center>
+     <form id="container" action="Login" method="post">
+        <center>
+            <input class="a" type="text" placeholder="Account Number" name="accountno"><br><br>
+            <input  class="a" type="text" placeholder="Password" name="password"><br><br>
+            <input id="submit" type="submit" value="Login">
+             <a href="Registration.html"><input id="reg" type=button value="Register"></a>
+           </center>
+          
+    </form>
+</body>
+</html>
